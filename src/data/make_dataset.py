@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 import click
 import logging
+import pandas as pd
+import nummpy as np
 from pathlib import Path
 from dotenv import find_dotenv, load_dotenv
 
@@ -13,7 +15,7 @@ def main(input_filepath, output_filepath):
         cleaned data ready to be analyzed (saved in ../processed).
     """
 
-
+    dataFrame   = pd.DataFrame
 
 if __name__ == '__main__':
     log_fmt = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
@@ -24,4 +26,4 @@ if __name__ == '__main__':
     # load up the .env entries as environment variables
     load_dotenv(find_dotenv())
 
-    #main()
+    main()
